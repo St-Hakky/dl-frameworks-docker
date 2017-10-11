@@ -6,7 +6,7 @@ PYTHON_VERSION?=3.5
 CUDA_VERSION?=8.0
 CUDNN_VERSION?=6
 UBUNTU_VERSION?=16.04
-IMAGE_NAME_TAG=geo-impudation
+IMAGE_NAME_TAG=image-name-tag
 SRC?=$(shell dirname `pwd`)
 
 build:
