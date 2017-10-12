@@ -1,10 +1,10 @@
-# Docker | Deep Learning Framework
+# Docker | Deep Learning Frameworks
 
-This is the Dockerfile for deep learning framework.
+This is the repogitory for Dockerfile to use Deep Learning frameworks.
 
 # Prerequests
 
-To execute Dockerfile, the following tools is needed.
+To execute Dockerfile, the following tools are needed.
 
 - [Docker](https://www.docker.com/)
 - [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
