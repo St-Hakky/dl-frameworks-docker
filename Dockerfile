@@ -1,13 +1,13 @@
 # versiion
 ARG cuda_version=8.0
-ARG cudnn_version=6
+ARG cudnn_version=5
 ARG ubuntu_version=16.04
 
 # base image
 FROM nvidia/cuda:${cuda_version}-cudnn${cudnn_version}-devel-ubuntu${ubuntu_version}
 
 # maintainer
-MAINTAINER MAINTAINER_NAME <EMAIL>
+MAINTAINER MAINTAINER_NAME <EMAIL
 
 # miniconda
 ENV CONDA_DIR /opt/conda
@@ -49,7 +49,7 @@ RUN conda install -y python=${python_version} && \
     pip install https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp35-cp35m-linux_x86_64.whl && \
     pip install https://cntk.ai/PythonWheel/GPU/cntk-2.1-cp35-cp35m-linux_x86_64.whl && \
     conda install Pillow scikit-learn notebook pandas matplotlib mkl nose pyyaml six h5py && \
-    conda install theano=0.8.2 pygpu bcolz && \
+    conda install -c mila-udem/label/pre theano libgpuarray pygpu bcolz && \
     pip install sklearn_pandas && \
     pip install keras==2.0.8 && \
     pip install https://github.com/Lasagne/Lasagne/archive/master.zip && \

@@ -1,6 +1,6 @@
-GPU?=0
+GPU?=1
 DOCKER_FILE=Dockerfile
-DOCKER=GPU=$(GPU) nvidia-docker
+DOCKER=NV_GPU=$(GPU) nvidia-docker
 BACKEND=tensorflow
 PYTHON_VERSION?=3.5
 CUDA_VERSION?=8.0
